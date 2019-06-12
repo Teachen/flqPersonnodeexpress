@@ -1,0 +1,13 @@
+
+<% subnavsort.forEach((item,index) => { %> 
+    <% if (item.subnavContent && item.subnavContent.length > 0) { %>
+        
+        <%if(item.organizeNo == null){%>
+            <li class="cate-<%=index %>"> 
+                <i>&gt;</i>
+                <a href="javascript:;" target="_blank"><strong><%=item.subnavName %></strong></a>                                                                    
+                <%= tmplFn({"list": item.child, "tmplFn": tmplFn}) %>    
+            </li> 
+        <%}%>     
+    <% } %>
+<% }); %> 

@@ -19,17 +19,17 @@
     <div class="mod">      
         <div class="im0">   
             <div class="im0l">  
-                <ul id="subSort"> 
+                <ul id="subSort">  
                     <% subnavsort.forEach((item,index) => { %> 
                         <% if (item.subnavName && item.subnavName.length > 0) { %>
                             
-                            <%if(item.organizeNo == item.containNo){%>
-                            <li class="cate-<%=index %>"> 
-                                <i>&gt;</i>
-                                <a href="javascript:;" target="_blank"><strong><%=item.subnavName %></strong></a>   
-                            </li>  
-                            
-                            <%}%>                                                             
+                            <%if(item.containNo === 0){%>
+                                <li class="cate-<%=index %>"> 
+                                    <i>&gt;</i>
+                                    <a href="javascript:;" target="_blank"><strong><%=item.subnavName %></strong></a>                                                                    
+                                   
+                                </li> 
+                            <%}%>     
                         <% } %>
                     <% }); %> 
                 </ul>

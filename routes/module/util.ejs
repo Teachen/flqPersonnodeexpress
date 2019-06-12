@@ -1,3 +1,9 @@
 <div>
-    <dl> <dt><a href="javascript:;" target="_blank"><%=item.subnavContent %></a></dt> </dl>                                 
+    <dl> 
+        <dt>
+            <a href="javascript:;" target="_blank"> 
+                <%- tmplFn ({"list": item.child, "tmplFn": tmplFn})%>
+            </a>
+        </dt> 
+    </dl>                                 
 </div>
