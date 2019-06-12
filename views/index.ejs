@@ -1,0 +1,671 @@
+﻿<%- include ./public/header.ejs %>
+<div class="mod">
+    <div class="navbar">    
+        <ul class="headtop_l">  
+            <% for(var i = 0 ; i<= navbars.length - 1; i++) {%> <!-- ejs for循环输出留言板内容 -->  
+                <li>   
+                    <a href="<%=navbars[i].typeurl %>"><span><%=navbars[i].title %></span></a>
+                </li>   
+            <% } %>  
+        </ul> 
+        <div class="headtop_r" style=" margin-top: -1px; "> 
+            <input name="kw" id="Destin_kw" type="text" class="headsearch_i" value="请输入关键词" onFocus="if(this.value=='请输入关键词') this.value='';" onKeyUp="STip(this.value);" autocomplete="off" x-webkit-speech speech/>
+            <input type="submit" value="搜索" class="headsearch_s"/><em></em>                           
+        </div>
+    </div>                                  
+</div>
+<div class="mod b20" id="headb"></div>                                                                                                                      
+<div class="m0">
+    <div class="mod">      
+        <div class="im0">   
+            <div class="im0l">  
+                <ul id="subSort"> 
+                    <% subnavsort.forEach((item,index) => { %> 
+                        <% if (item.subnavName && item.subnavName.length > 0) { %>
+                            
+                            <%if(item.organizeNo == item.containNo){%>
+                            <li class="cate-<%=index %>"> 
+                                <i>&gt;</i>
+                                <a href="javascript:;" target="_blank"><strong><%=item.subnavName %></strong></a>   
+                            </li>  
+                            
+                            <%}%>                                                             
+                        <% } %>
+                    <% }); %> 
+                </ul>
+            </div>
+            <div class="im0m">  
+                <div>
+                    <script type="text/javascript" src="/javascripts/slide.js"></script>         
+                    <div id="slide_a14" class="slide" style="width:660px;height:300px;">
+                        <a href="javascript:;" target="_blank"><img src="/images/142535881.png" width="660" height="300" alt=""/></a>
+                        <a href="javascript:;" target="_blank"><img src="/images/142543681.png" width="660" height="300" alt=""/></a>
+                    </div>
+                    <script type="text/javascript">new dslide('slide_a14');</script>
+                </div> 
+            </div>
+            <div class="im0r">
+                <div class="im0u">
+                    <img src="/images/ico_imgleft02.jpg" width="166" height="166" alt="网站搜索二维码" style="padding:59px 0 0 59px;">
+                    <p style="  text-align: center;  font-size: 16px; color: #ccc; ">小程序发布新品！10万用户都能看得见！</p>
+                </div> 
+            </div>
+            <div class="c_b"></div>
+        </div>
+    </div>
+</div>
+<div class="mod">
+    <div class="b10" style="height:20px;"></div>
+    <div class="im-b im-b-sell im-b-floor-f0">
+        <div class="im-l">
+            <a href="javascript:;"><p>供应</p></a>
+            <ul>
+                <li><a href="javascript:;" target="_blank">纽扣</a></li> 
+                <li><a href="javascript:;" target="_blank">拉链</a></li> 
+                <li><a href="javascript:;" target="_blank">商标</a></li> 
+                <li><a href="javascript:;" target="_blank">饰品</a></li> 
+                <li><a href="javascript:;" target="_blank">织带</a></li> 
+                <li><a href="javascript:;" target="_blank">松紧绳</a></li> 
+                <li><a href="javascript:;" target="_blank">橡筋</a></li> 
+                <li><a href="javascript:;" target="_blank">烫画</a></li> 
+                <li><a href="javascript:;" target="_blank">化工</a></li> 
+                <li><a href="javascript:;" target="_blank">热熔标</a></li> 
+                <li><a href="javascript:;" target="_blank">扣具</a></li> 
+                <!-- <li><a href="javascript:;" target="_blank">纺织品</a></li>         
+                <li><a href="javascript:;" target="_blank">花样机</a></li> 
+                <li><a href="javascript:;" target="_blank">印花设</a></li> 
+                <li><a href="javascript:;" target="_blank">弹簧扣</a></li> 
+                <li><a href="javascript:;" target="_blank">真毛球</a></li> 
+                <li><a href="javascript:;" target="_blank">丙纶丝</a></li> 
+                <li><a href="javascript:;" target="_blank">织带胶</a></li> 
+                <li><a href="javascript:;" target="_blank">刻字膜</a></li> 
+                <li><a href="javascript:;" target="_blank">尼龙织</a></li> 
+                <li><a href="javascript:;" target="_blank">植绒类</a></li> 
+                <li><a href="javascript:;" target="_blank">印花设</a></li> 
+                <li><a href="javascript:;" target="_blank">弹簧扣</a></li>              
+                <li><a href="javascript:;" target="_blank">服装袋</a></li>   -->
+                <li><a href="javascript:;" target="_blank">罗纹</a></li> 
+                <li><a href="javascript:;" target="_blank">色纱</a></li> 
+                <li><a href="javascript:;" target="_blank">吊牌别</a></li>    
+                <li><a href="javascript:;" target="_blank">其他</a></li> 
+            </ul>                                                                                                                                                                                                                                  </ul>
+        </div>
+        <div class="im-r im-r-sell">
+            <div  class="im-r-sel-ul">
+                <a href="javascript:;" target="_blank"><img src="/images/18421340174.jpg" width="134" height="134" alt=""/></a>
+                <p><a href="javascript:;" title="开模定制各类五金纽扣锌合金绳扣吊钟日字扣" target="_blank">石狮鑫人坊五金制品</a></p>
+                <p>厂家超低价直销各种规格线扣，弹簧扣，帽钟，吊钟，绳扣，绳头，欢迎咨询！</p> 
+            </div>  
+        </div> 
+        <div class="catemain-rank f_l">
+                <h3 class="nvred limit-width">
+                    排行榜
+                    <a href="1" title="1" target="_blank">1</a>
+                </h3>
+                <ul class="rank-list J_ranklist">
+                    <li class="first J_home_goods" store-id="2102423"> 
+                        <div class="imgbox nv">
+                            <img class="first-portrait js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" data-lazy="https://img06.eelly.com/store2102423/logo.jpg?t=1551376425"
+                            alt="" />
+                        </div>
+                        <p class="limit-width">
+                            <a href="javascript:;" title="深圳市福田区古兰衣服装厂"   
+                            target="_blank">深圳市福田区古兰衣服装厂</a>
+                        </p>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2288046"> 
+                        <span class="rank-box limit-width f_l">
+                            <a href="javascript:;" title="杭州淘斯电子商务有限公司"
+                            target="_blank"><em class="rank-num">2</em>杭州淘斯电子商务有限公司</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 60%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods active" store-id="2592056">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2592056-goods.html" title="深圳市龙岗区哈尼服装批发商行"
+                            target="_blank"><em class="rank-num">3</em>深圳市龙岗区哈尼服装批发商行</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 50%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2640079">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2640079-goods.html" title="intfeday"
+                            target="_blank"><em class="rank-num">4</em>intfeday</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 50%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2024330">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2024330-goods.html" title="蔡超婉的店"
+                            target="_blank"><em class="rank-num">5</em>蔡超婉的店</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 50%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2321630">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2321630-goods.html" title="广州市海珠区莉翔制衣厂"
+                            target="_blank"><em class="rank-num">6</em>广州市海珠区莉翔制衣厂</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 40%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="3053410">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-3053410-goods.html" title="杨国伟的店"
+                            target="_blank"><em class="rank-num">7</em>杨国伟的店</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 40%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="430459">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-430459-goods.html" title="广州千兴多贸易有限公司"
+                            target="_blank"><em class="rank-num">8</em>广州千兴多贸易有限公司</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconnv" style="width: 40%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div> 
+    <div class="im-b im-b-sell im-b-floor-f1">
+        <div class="im-l">
+            <a href="javascript:;"><p>需求</p></a>
+            <ul>
+                <li><a href="javascript:;" target="_blank">纽扣</a></li> 
+                <li><a href="javascript:;" target="_blank">拉链</a></li> 
+                <li><a href="javascript:;" target="_blank">商标</a></li> 
+                <li><a href="javascript:;" target="_blank">饰品</a></li> 
+                <li><a href="javascript:;" target="_blank">织带</a></li> 
+                <li><a href="javascript:;" target="_blank">松紧绳</a></li> 
+                <li><a href="javascript:;" target="_blank">橡筋</a></li> 
+                <li><a href="javascript:;" target="_blank">烫画</a></li> 
+                <li><a href="javascript:;" target="_blank">化工</a></li> 
+                <li><a href="javascript:;" target="_blank">热熔标</a></li> 
+                <li><a href="javascript:;" target="_blank">扣具</a></li> 
+                <!-- <li><a href="javascript:;" target="_blank">纺织品</a></li>         
+                <li><a href="javascript:;" target="_blank">花样机</a></li> 
+                <li><a href="javascript:;" target="_blank">印花设</a></li> 
+                <li><a href="javascript:;" target="_blank">弹簧扣</a></li> 
+                <li><a href="javascript:;" target="_blank">真毛球</a></li> 
+                <li><a href="javascript:;" target="_blank">丙纶丝</a></li> 
+                <li><a href="javascript:;" target="_blank">织带胶</a></li> 
+                <li><a href="javascript:;" target="_blank">刻字膜</a></li> 
+                <li><a href="javascript:;" target="_blank">尼龙织</a></li> 
+                <li><a href="javascript:;" target="_blank">植绒类</a></li> 
+                <li><a href="javascript:;" target="_blank">印花设</a></li> 
+                <li><a href="javascript:;" target="_blank">弹簧扣</a></li>              
+                <li><a href="javascript:;" target="_blank">服装袋</a></li>   -->
+                <li><a href="javascript:;" target="_blank">罗纹</a></li> 
+                <li><a href="javascript:;" target="_blank">色纱</a></li> 
+                <li><a href="javascript:;" target="_blank">吊牌别</a></li>    
+                <li><a href="javascript:;" target="_blank">其他</a></li> 
+            </ul>                                                                                                                                                                                                                                  </ul>
+        </div>
+        <ul class="im-r im-r-sell  J_storelist">
+            <li class="im-r-sel-ul">                                 
+                <div class="list-imgs transition J_listimg f_l"> 
+                    <a href="javascript:;" target="_blank"><img src="/images/18421340174.jpg" width="134" height="134" alt=""/></a>
+                    <div class="op-svg"></div><div class="enterst">进入档口</div> 
+                </div>
+                <div class="list-infor J_listinf f_l transition"> 
+                    <div class="J_listinfort f_l transition"> 
+                        <p><a href="javascript:;" title="开模定制各类五金纽扣锌合金绳扣吊钟日字扣" target="_blank">石狮鑫人坊五金制品</a></p>
+                        <p>厂家超低价直销各种规格线扣，弹簧扣，帽钟，吊钟，绳扣，绳头，欢迎咨询！</p> 
+                    </div> 
+                    <div class="list-infor-img J_listinfori transition"> 
+                        <ul class="storbox">    
+                            <li class="f_l"> <div class="stor-img"><img src="/images/140330678.jpg" alt="帖子详情图片"></div> </li>    
+                            <li class="f_l"> <div class="stor-img"><img src="/images/14314998139.jpg" alt="帖子详情图片"></div> </li>               
+                            <li class="f_l"> <div class="stor-img"><img src="/images/14240823136.jpg" alt="帖子详情图片"></div> </li>  
+                        </ul>
+                    </div>
+                </div>
+            </li>   
+        </ul> 
+        <div class="catemain-rank f_l">
+                <h3 class="nanblue limit-width">
+                    排行榜
+                    <a href="1" title="1" target="_blank">1</a>
+                </h3>
+                <ul class="rank-list J_ranklist">
+                    <li class="first J_home_goods" store-id="2102423"> 
+                        <div class="imgbox nv">
+                            <img class="first-portrait js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" data-lazy="https://img06.eelly.com/store2102423/logo.jpg?t=1551376425"
+                            alt="" />
+                        </div>
+                        <p class="limit-width">
+                            <a href="javascript:;" title="深圳市福田区古兰衣服装厂"   
+                            target="_blank">深圳市福田区古兰衣服装厂</a>
+                        </p>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2288046"> 
+                        <span class="rank-box limit-width f_l">
+                            <a href="javascript:;" title="杭州淘斯电子商务有限公司"
+                            target="_blank"><em class="rank-num">2</em>杭州淘斯电子商务有限公司</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 60%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods active" store-id="2592056">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2592056-goods.html" title="深圳市龙岗区哈尼服装批发商行"
+                            target="_blank"><em class="rank-num">3</em>深圳市龙岗区哈尼服装批发商行</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 50%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2640079">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2640079-goods.html" title="intfeday"
+                            target="_blank"><em class="rank-num">4</em>intfeday</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 50%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2024330">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2024330-goods.html" title="蔡超婉的店"
+                            target="_blank"><em class="rank-num">5</em>蔡超婉的店</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 50%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="2321630">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-2321630-goods.html" title="广州市海珠区莉翔制衣厂"
+                            target="_blank"><em class="rank-num">6</em>广州市海珠区莉翔制衣厂</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 40%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="3053410">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-3053410-goods.html" title="杨国伟的店"
+                            target="_blank"><em class="rank-num">7</em>杨国伟的店</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 40%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clearfix J_home_goods" store-id="430459">
+                        <span class="rank-box limit-width f_l">
+                            <a href="https://www.eelly.com/store-430459-goods.html" title="广州千兴多贸易有限公司"
+                            target="_blank"><em class="rank-num">8</em>广州千兴多贸易有限公司</a>
+                        </span>
+                        <div class="rank-star f_r">
+                            <div class="star_case">
+                            </div>
+                            <div class="starwid iconna" style="width: 40%">
+                            </div>
+                        </div>
+                        <ul class="rank-img-box none clearfix J_rankimg">
+                            <li class="f_l J_home_goods" goods-id="12010920">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                            <li class="f_l J_home_goods" goods-id="12010952">
+                                <img class="js_bigpipe" src="https://img09.eelly.com/store2640079/goods/20190506/2980058217551.jpg?t=1557128501" alt="商品图" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div style= "margin-bottom: 20px;">
+        <img src="/images/midbanner.png"  width="1201" height="119" alt="广告栏">
+    </div>
+    <div class="im-b im-b-sell im-b-floor-f2">
+        <div class="im-l">
+            <a href="javascript:;"><p>作品</p></a>
+            <ul>
+                <li><a href="javascript:;" target="_blank">纽扣</a></li> 
+                <li><a href="javascript:;" target="_blank">拉链</a></li> 
+                <li><a href="javascript:;" target="_blank">商标</a></li> 
+                <li><a href="javascript:;" target="_blank">饰品</a></li> 
+                <li><a href="javascript:;" target="_blank">其他</a></li> 
+            </ul>
+        </div>
+        <div class="im-r im-r-sell"> 
+            <div class="im-r-sel-ul"></div> 
+            <div class="im-r-sel-ul"></div>
+            <div class="im-r-sel-ul"></div>
+            <div class="im-r-sel-ul"></div>
+        </div>
+        <div class="im-r im-r-merchar">
+            <div class="im-h-mer-tp im-l" style=" background: #7AAEC2;"> <p>商家</p>  </div>
+            <div class="im-r-mer-by im-r-sell">
+                <div>
+                    <a href="javascript:;" target="_blank"><img src="/images/18421340174.jpg" width="134" height="134" alt=""></a> 
+                    <p>上海恒远服饰辅料有限公司</p>
+                    <p>浙江省嘉兴市嘉善县钮扣</p>
+                    <button>纽扣</button><button>生产型</button> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script> 
+    function createArray(rows, cols) {
+      const result = new Array(rows) || [];
+      for (let i = 0; i < rows; i++) {
+        const arr = new Array(cols);
+        for (let j = 0; j < cols; j++) {
+          arr[j] = false;
+        }
+        result[i] = arr;
+      }
+      return result;
+    }
+    createArray(20,30);
+</script> 
+
+<div class="mod">
+    <div class="head-txt">
+        <span>
+            <a href="javascript:;">申请链接</a> &nbsp;|&nbsp;
+            <a href="javascript:;">更多<i>&gt;</i></a>
+        </span>
+        <div class="px16">友情链接</div>
+    </div>
+    <div class="ilink"> 
+    <ul></ul>
+    <div class="c_b"></div>
+    </div>
+    <div class="ilink">
+        <ul>
+            <li><a href="javascript:;" target="_blank" title="金属制品网">金属制品网</a></li>
+            <li><a href="javascript:;" target="_blank" title="新智造网">新智造网</a></li>
+            <li><a href="javascript:;" target="_blank" title="B2B网站大全">B2B网站大全</a></li>
+            <li><a href="javascript:;" target="_blank" title="针织网">针织网</a></li>
+            <li><a href="javascript:;" target="_blank" title="名品网">名品网</a></li>
+            <li><a href="javascript:;" target="_blank" title="环球鞋网">环球鞋网</a></li>
+            <li><a href="javascript:;" target="_blank" title="女装网">女装网</a></li>
+            <li><a href="javascript:;" target="_blank" title="品牌服装网">品牌服装网</a></li>
+            <li><a href="javascript:;" target="_blank" title="凡客诚品">凡客诚品</a></li>
+            <li><a href="javascript:;" target="_blank" title="衣联网">衣联网</a></li>
+            <li><a href="javascript:;" target="_blank" title="服装人才网">服装人才网</a></li>
+            <li><a href="javascript:;" target="_blank" title="丽人网">丽人网</a></li>
+            <li><a href="javascript:;" target="_blank" title="华衣网">华衣网</a></li>
+            <li><a href="javascript:;" target="_blank" title="穿针引线">穿针引线</a></li>
+            <li><a href="javascript:;" target="_blank" title="全球纺织网">全球纺织网</a></li>
+            <li><a href="javascript:;" target="_blank" title="服装网">服装网</a></li>
+        </ul>
+        <div class="c_b"></div>
+    </div>
+</div>
+</div> 
+<script type="text/javascript" src="/javascripts/index.js"></script> 
+<%- include ./public/footer.ejs %>
